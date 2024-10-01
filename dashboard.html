@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" href="images/img1.jpg">
+    <script src="https://kit.fontawesome.com/23ebe26d2e.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <ul class="menu" id="menu">
+                <button class="cross-btn" onclick="close_menu()">X</button>
+
+                <li class="active">
+                    <a href="index.html">
+                        <i class="fa-solid fa-gauge-simple-high"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Statistics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="career.html">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Careers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <span>FAQ</span>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="setting.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="login.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <aside>
+        <div class="main-content">
+            <div class="header-wraper">
+                <div class="header-title">
+                    <span>Primary</span>
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="user-info">
+                    <button onclick="open_menu()" id="btn"><i  class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="search">
+                    </div>
+                    <img src="images/img1.jpg" alt="">
+                </div>
+            </div>
+            <div class="price">
+                <h4>$700</h4>
+                <h4>$600</h4>
+                <h4>$500</h4>
+                <h4>$400</h4>
+                <h4>$300</h4>
+                <h4>$200</h4>
+                <h4>$100</h4>
+                <h4>0</h4>
+            </div>
+            <div class="year">
+                <h4>2017</h4>
+                <h4>2018</h4>
+                <h4>2019</h4>
+                <h4>2020</h4>
+                <h4>2021</h4>
+                <h4>2022</h4>
+                <h4>2023</h4>
+                <h4>2024</h4>
+            </div>
+            <div class="outter1">
+                <div class="horizontal"></div>
+                <div class="vertical"></div>
+                <a href="index.html">X</a>
+                <div class="candel">
+                    <div class="outter1-box1"></div>
+                    <div class="outter1-box2"></div>
+                    <div class="outter1-box3"></div>
+                    <div class="outter1-box4"></div>
+                    <div class="outter1-box5"></div>
+                    <div class="outter1-box6"></div>
+                    <div class="outter1-box7"></div>
+                    <div class="outter1-box8"></div>
+                    
+                </div>
+            </div>
+
+        </div>
+    
+    </aside>
+    
+
+
+    <script>
+        var x=document.getElementById("menu")
+   console.log(x)
+   function open_menu() {
+       x.style.left="0px";
+      /* alert("hello");*/
+       document.getElementById("btn").style.display="none";
+       
+       
+   }
+   function close_menu() {
+       x.style.left="-100%";
+       document.getElementById("btn").style.display="block";
+       
+       
+   }
+   </script>
+
+</body>
+</html>

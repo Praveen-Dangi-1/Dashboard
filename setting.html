@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="setting.css">
+    <link rel="icon" href="images/img1.jpg">
+    <script src="https://kit.fontawesome.com/23ebe26d2e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <ul class="menu" id="menu">
+                <button class="cross-btn" onclick="close_menu()">X</button>
+                <li class="active">
+                    <a href="index.html">
+                        <i class="fa-solid fa-gauge-simple-high"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Statistics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="career.html">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Careers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="login.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header-wraper">
+            <div class="header-title">
+                <span>Primary</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user-info">
+                <button onclick="open_menu()" id="btn"><i  class="fa-solid fa-ellipsis-vertical"></i></button>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="search">
+                </div>
+                <img src="images/img1.jpg" alt="">
+            </div>
+        </div>
+        <div class="big-boxx">
+            <div class="box1">
+                <div class="genral">
+                    <h2>General</h2>
+                    <button>Save</button>
+                </div>
+                <div class="user-pass">
+                    <p>Update your account settings</p>
+                    <label for="">Username</label>
+                    <input type="text" placeholder="">
+                    <label for="">email</label>
+                    <input type="email" placeholder="">
+                    <label for="">Mobile Number</label>
+                    <input type="number" placeholder="">
+                    <label for="">Old Password</label>
+                    <input type="password" placeholder="">
+                    <label for="">New Password</label>
+                    <input type="password" placeholder="">
+                    <label for="">Confirm New Password</label>
+                    <input type="password" placeholder="">
+                </div>
+            </div>
+            <div class="box2">
+                <h2>Additional Settings</h2>
+                <p>Update your account settings</p>
+                <div class="box2-a">
+                    <h4><b>Download course content</b></h4>
+                    <i class="fa-solid fa-toggle-on"></i>
+                </div>
+                <div class="box2-b">
+                    <h4><b>Enable Bookmarks</b></h4>
+                    <i class="fa-solid fa-toggle-off"></i>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script>
+        var x=document.getElementById("menu")
+   console.log(x)
+   function open_menu() {
+       x.style.left="0px";
+      /* alert("hello");*/
+       document.getElementById("btn").style.display="none";
+       
+       
+   }
+   function close_menu() {
+       x.style.left="-100%";
+       document.getElementById("btn").style.display="block";
+       
+       
+   }
+   </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patients</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="icon" href="images/img1.jpg">
+    <script src="https://kit.fontawesome.com/23ebe26d2e.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <ul class="menu" id="menu">
+                <button class="cross-btn" onclick="close_menu()">X</button>
+                <li class="active">
+                    <a href="index.html">
+                        <i class="fa-solid fa-gauge-simple-high"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Statistics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="career.html">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Careers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="setting.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="login.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <aside>
+        <div class="main-content">
+            <div class="header-wraper">
+                <div class="header-title">
+                    <span>Primary</span>
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="user-info">
+                    <button onclick="open_menu()" id="btn"><i  class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="search">
+                    </div>
+                    <img src="images/img1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="main-container">
+                <div class="container">
+                    <div class="background">
+                        <img src="images/back.avif" alt="">
+                    </div>
+                    <div class="profilee">
+                        <img src="images/img1.jpg" alt="">
+                    </div>
+                    <div class="btnn">
+                        <button class="black">Connect</button>
+                        <button class="orange">Message</button>
+
+                    </div>
+                    <div class="follower">
+                        <h2>22</h2>
+                        <h2>10</h2>
+                        <h2>89</h2>
+                    </div>
+                    <div class="follower1">
+                        <h4>Friends</h4>
+                        <h4>Photos</h4>
+                        <h4>Comments</h4>
+                    </div>
+                    <div class="address">
+                        <p><b>Praveen Dangi</b>, 22</p>
+                        <h6>Bhopal, Madhya Pradesh</h6>
+                        <h4>Solution Manager-Creative Team</h4>
+                        <h4>Cybrom Pvt. Ltd.</h4>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </aside>
+
+
+
+
+    <script>
+        var x=document.getElementById("menu")
+   console.log(x)
+   function open_menu() {
+       x.style.left="0px";
+       /*alert("hello");*/
+       document.getElementById("btn").style.display="none";
+       
+       
+   }
+   function close_menu() {
+       x.style.left="-100%";
+       document.getElementById("btn").style.display="block";
+       
+       
+   }
+   </script>
+
+
+
+
+</body>
+</html>

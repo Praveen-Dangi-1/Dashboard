@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/img1.jpg">
+    <link rel="icon" href="images/img1.jpg">
+    <script src="https://kit.fontawesome.com/23ebe26d2e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <ul class="menu" id="menu">
+                <button class="cross-btn" onclick="close_menu()">X</button>
+                <li class="active">
+                    <a href="index.html">
+                        <i class="fa-solid fa-gauge-simple-high"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Statistics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="career.html">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Careers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="setting.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="login.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header-wraper">
+            <div class="header-title">
+                <span>Primary</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user-info">
+                <button onclick="open_menu()" id="btn"><i  class="fa-solid fa-ellipsis-vertical"></i></button>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="search">
+                </div>
+                <img src="images/img1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="card-container">
+            <h3 class="main-title">Today's Data</h3>
+            <div class="card-wraper">
+
+
+                <div class="payment-card light-red">
+                    <div class="card-header">
+                        <div class="amount">
+                            <span class="title">
+                                Payment Amount
+                            </span>
+                            <span class="amount-value">
+                                $500.00
+                            </span>
+                        </div>
+                        <i class="fa-solid fa-dollar-sign icon"></i>
+                    </div>
+                    <span class="card-detail">**** **** **** 2354</span>
+                </div>
+
+                <div class="payment-card light-purple">
+                    <div class="card-header">
+                        <div class="amount">
+                            <span class="title">
+                                Payment Order
+                            </span>
+                            <span class="amount-value">
+                                $200.00
+                            </span>
+                        </div>
+                        <i class="fa-solid fa-list icon dark-purple"></i>
+                    </div>
+                    <span class="card-detail">**** **** **** 9874</span>
+                </div>
+
+                <div class="payment-card light-green">
+                    <div class="card-header">
+                        <div class="amount">
+                            <span class="title">
+                                Payment Customer
+                            </span>
+                            <span class="amount-value">
+                                $350.00
+                            </span>
+                        </div>
+                        <i class="fa-solid fa-person icon dark-green"></i>
+                    </div>
+                    <span class="card-detail">**** **** **** 9956</span>
+                </div>
+
+                <div class="payment-card light-blue last-card">
+                    <div class="card-header">
+                        <div class="amount">
+                            <span class="title">
+                                Payment Proced
+                            </span>
+                            <span class="amount-value">
+                                $150.00
+                            </span>
+                        </div>
+                        <i class="fa-solid fa-check icon dark-blue"></i>
+                    </div>
+                    <span class="card-detail">**** **** **** 4455</span>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="tabular-wraper">
+            <h3 class="main-title">Finance Data</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Transection Type</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-06-15</td>
+                            <td>Expenses</td>
+                            <td>Office Supplise</td>
+                            <td>$250</td>
+                            <td>Office Expenses</td>
+                            <td>Pending</td>
+                            <td><button>Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>2024-06-10</td>
+                            <td>Travel</td>
+                            <td>Family Tour</td>
+                            <td>$550</td>
+                            <td>Family</td>
+                            <td>Confirm</td>
+                            <td><button>Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>2024-05-11</td>
+                            <td>Food</td>
+                            <td>Family Party</td>
+                            <td>$250</td>
+                            <td>Party</td>
+                            <td>Confirm</td>
+                            <td><button>Edit</button></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="7">
+                                Total: $1000
+                            </td>
+                        </tr>
+                    </tfoot>
+                        
+                </table>
+            </div>
+        </div>
+
+
+        <div class="tabular-wraper1">
+            <h3 class="main-title">Finance Data</h3>
+            <div class="table-container1">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="date" placeholder="search Date">
+                </div>
+            </div>
+        </div>
+
+
+   
+        <!------------footer SECTION START---------------->
+        <!--------------========================================---------->
+        <!--------------========================================---------->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                        <li><a href="#">Blog</a></li>
+                        
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                   
+                    <div class="footer-col">
+                        <h4>useful links</h4>
+                        <ul>
+                            <li><a href="#">How it works?</a></li>
+                            <li><a href="#">Our Teleport</a></li>
+                            <li><a href="#">Freqently Asked Questions(FAQs)</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Listing Policy</a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col1">
+                            <i class="fa-regular fa-credit-card"></i>
+                            <h4>Secure Payment</h4>
+                        </div>
+                        <div class="social-links">
+                            <h5>100% Secure Online Transection</h5>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col1">
+                            <i class="fa-regular fa-square-check"></i>
+                            <h4>Our Trust</h4>
+                        </div>
+                        <div class="social-links">
+                            <h5>Money stored safely & is transferred to the seller only after buyer confirmation</h5>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col1">
+                            <i class="fa-regular fa-comment-dots"></i>
+                            <h4>Customer Support</h4>
+                        </div>
+                        <div class="social-links">
+                            <h5>Friendly customer support</h5>
+                        </div>
+                    </div>
+                    <div class="border-bottom"></div>
+                    <div>
+                    
+                        <p>My Website is a free platform where you can earn a lot of <b>Money</b> and Transffered very Quickly in your account and PhonePe, Paytm, GooglePay,etc   </p>
+                        <div class="border-bottom"></div>
+
+                        <div class="copyright">Copyright © 2024, <b>My Website™ </b>All Rights Reserved</div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!------------footer SECTION END---------------->
+
+
+    </div>
+
+    
+
+
+
+
+   
+
+    <script>
+        var x=document.getElementById("menu")
+   console.log(x)
+   function open_menu() {
+       x.style.left="0px";
+      /* alert("hello");*/
+       document.getElementById("btn").style.display="none";
+       
+       
+   }
+   function close_menu() {
+       x.style.left="-100%";
+       document.getElementById("btn").style.display="block";
+       
+       
+   }
+   </script>
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="images/img1.jpg">
+    <script src="https://kit.fontawesome.com/23ebe26d2e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <ul class="menu" id="menu">
+                <button class="cross-btn" onclick="close_menu()">X</button>
+                <li class="active">
+                    <a href="index.html">
+                        <i class="fa-solid fa-gauge-simple-high"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Statistics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="career.html">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Careers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="setting.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="index.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header-wraper">
+            <div class="header-title">
+                <span>Primary</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user-info">
+                <button onclick="open_menu()" id="btn"><i  class="fa-solid fa-ellipsis-vertical"></i></button>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="search">
+                </div>
+                <img src="images/img1.jpg" alt="">
+            </div>
+        </div>
+
+
+              <!--------------========================================---------->
+           <!------------HEADER END---------------->
+           <!--------------========================================---------->
+        <div class="main">
+            <div class="login-form">
+                <a class="cross" href="index.html">X</a>
+                <div class="login">
+                    
+                    <form action="" class="login11">
+                        
+                        <label for="">username</label>
+                        <input class="user" type="text">
+                        <label for="">Password</label>
+                        <input class="user" type="password">
+                        <button class="login-btn">LOGIN</button>
+                        <h4>OR SIGNUP USING</h4>
+                        <div class="logoo">
+                            <li>
+                                <a href="https://www.facebook.com/">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="https://myaccount.google.com/">
+                                    <i class="fa-brands fa-google"></i>
+                                </a>"
+                                <a href="https://x.com/i/flow/login">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                        </div>
+                    </form>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var x=document.getElementById("menu")
+   console.log(x)
+   function open_menu() {
+       x.style.left="0px";
+      /* alert("hello");*/
+       document.getElementById("btn").style.display="none";
+       
+       
+   }
+   function close_menu() {
+       x.style.left="-100%";
+       document.getElementById("btn").style.display="block";
+       
+       
+   }
+   </script>
+
+</body>
+</html>
+

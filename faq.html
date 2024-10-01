@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>career</title>
+    <link rel="stylesheet" href="faq.css">
+    <link rel="icon" href="images/img1.jpg">
+    <script src="https://kit.fontawesome.com/23ebe26d2e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <ul class="menu" id="menu">
+                <button class="cross-btn" onclick="close_menu()">X</button>
+                <li class="active">
+                    <a href="index.html">
+                        <i class="fa-solid fa-gauge-simple-high"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Statistics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="career.html">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Careers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="setting.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="login.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header-wraper">
+            <div class="header-title">
+                <span>Primary</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user-info">
+                <button onclick="open_menu()" id="btn"><i  class="fa-solid fa-ellipsis-vertical"></i></button>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="search">
+                </div>
+                <img src="images/img1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="down-content">
+            <img src="images/FAQ.webp" alt="image">
+            <div class="st-row">
+                <h1><u>Frequently Asked Questions</u></h1><br><br>
+                <h2>Why cannot I see the dashboard in my workspace?</h2>
+                <p>Dashboards are not available for the customers with fiscal calendars.</p>
+
+            </div>
+            <div class="nd-row">
+                <h2>Can I change the default date filter for a dashboard?</h2>
+                <p>Editors, explorers, and administrators can change the default date filter to a different period. The new value applies to the whole dashboard for all viewers <p>Viewers can temporarily change the date filter. The new value also applies to the whole dashboard but visible only to the current viewer.</p></p>
+            </div>
+            <div class="nd-row">
+                <h2>Whom are dashboards shared with?</h2>
+                <p>Dashboards are always visible to all workspace users. Any change you save is immediately visible to all workspace users.</p>
+                
+            </div>
+            <div class="nd-row">
+                <h2>How many dashboards can I have in my workspace</h2>
+                <p>You can have any number of dashboards in your workspace. We recommend keeping only the dashboards that are relevant to your users.</p>
+            </div>
+            <div class="nd-row">
+                <h2>Can I reorder dashboards in the dashboard list?</h2>
+                <p>No. The dashboards are listed alphabetically.</p>
+            </div>
+            <div class="nd-row">
+                <h2>Can I export dashboards to PDF?</h2>
+                <p>No. You can not export dashboards to PDF and schedule regular emails with the PDF attached.</p>
+            </div>
+            <div class="nd-row">
+                <h2>Whom are dashboards shared with?</h2>
+                <p>Dashboards are always visible to all workspace users. Any change you save is immediately visible to all workspace users.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var x=document.getElementById("menu")
+   console.log(x)
+   function open_menu() {
+       x.style.left="0px";
+      /* alert("hello");*/
+       document.getElementById("btn").style.display="none";
+       
+       
+   }
+   function close_menu() {
+       x.style.left="-100%";
+       document.getElementById("btn").style.display="block";
+       
+       
+   }
+   </script>
+
+</body>
+</html>
+
